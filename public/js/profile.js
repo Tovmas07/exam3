@@ -42,3 +42,29 @@ window.addEventListener('click', (event) => {
 closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
 });
+
+
+// async function loadTasks() {
+//     const response = await fetch('http://localhost:3001/tasks');
+//     const tasks = await response.json();
+//     const taskList = document.getElementById('task-list');
+//     taskList.innerHTML = '';
+//
+//     tasks.forEach(task => {
+//         const li = document.createElement('li');
+//         li.textContent = `${task.title} - ${task.description} (date: ${task.date})`;
+//         taskList.appendChild(li);
+//     });
+// }
+
+
+// document.getElementById('create-task-btn').addEventListener('click', async (e) => {
+//
+//     const title = document.getElementById('title').value;
+//     const description = document.getElementById('description').value;
+//     const date = document.getElementById('date').value;
+//
+//     if (!title || !description || !date) {
+//         alert('invalid title or description');
+//         return;
+//     }
